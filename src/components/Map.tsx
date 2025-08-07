@@ -13,7 +13,7 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833, link: "#planten-und-blomen" },
+  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833, link: "#planten-un-blomen" },
   { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
   { name: "Lohsepark (soon)", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
   { name: "Gerhart-Hauptmann-Platz (soon)", lat: 53.5511, lng: 9.9937, link: "#gerhard-hauptmann-platz" },
