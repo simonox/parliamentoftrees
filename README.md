@@ -52,7 +52,7 @@ project/
 │   │   ├── Map.tsx          # Map and marker logic
 │   │   └── Navigation.tsx   # Responsive navigation
 │   └── data/
-│       └── data.json        # Tree/location data
+│       └── data.json        # Tree/location data, I have NO IDEA WHERE THIS IS USED
 ├── .github/
 │   ├── workflows/
 │   │   └── vercel-preview.yml # Vercel preview deployment action
@@ -63,6 +63,8 @@ project/
 ├── vite.config.ts           # Vite config
 └── README.md                # Project documentation
 ```
+
+> TODO: Clarify where this data.json is used. As far as I can see it is unused.
 
 ## Development
 
