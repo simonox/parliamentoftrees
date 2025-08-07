@@ -21,7 +21,6 @@ A walkable soundscape web app for Hamburg, featuring interactive maps, tree stor
 - **Styling:** Tailwind CSS for utility-first styling, custom CSS for animations.
 - **Map:** Leaflet (via react-leaflet) for interactive maps and markers.
 - **Audio:** Custom SoundCloud-style audio player using `react-soundplayer`.
-- **Data:** Static JSON file for tree and location data.
 - **Navigation:** Responsive, mobile-friendly navigation with anchor links and smooth scrolling.
 - **Static Assets:** Served from the `public/` directory.
 
@@ -53,7 +52,7 @@ project/
 │   │   ├── Map.tsx          # Map and marker logic
 │   │   └── Navigation.tsx   # Responsive navigation
 │   └── data/
-│       └── data.json        # Tree/location data
+│       └── data.json        # Tree/location data, I have NO IDEA WHERE THIS IS USED
 ├── .github/
 │   ├── workflows/
 │   │   └── vercel-preview.yml # Vercel preview deployment action
@@ -64,6 +63,8 @@ project/
 ├── vite.config.ts           # Vite config
 └── README.md                # Project documentation
 ```
+
+> TODO: Clarify where this data.json is used. As far as I can see it is unused.
 
 ## Development
 
@@ -115,6 +116,8 @@ npm run preview
 
 - **Dependabot**: Weekly scans for npm dependency updates (`.github/dependabot.yml`).
 - **Vercel Preview Deployments**: GitHub Action for preview deployments on PRs (`.github/workflows/vercel-preview.yml`).
+- **Vercel Production Deployments**: GitHub Action for production deployments on merging PRs into main (`.github/workflows/vercel-production.yml`).
+
 
 ## Working with the Project
 
