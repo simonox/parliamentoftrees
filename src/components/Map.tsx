@@ -13,12 +13,12 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833 },
-  { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338 },
-  { name: "Lohsepark (soon)", lat: 53.5451, lng: 10.0024 },
-  { name: "Gerhart-Hauptmann-Platz (soon)", lat: 53.5511, lng: 9.9937 },
-  { name: "University of Hamburg (soon)", lat: 53.5667, lng: 9.9833 },
-  { name: "Marco-Polo-Terassen (soon)", lat: 53.5433, lng: 9.9917 }
+  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833, link: "#planten-und-blomen" },
+  { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
+  { name: "Lohsepark (soon)", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
+  { name: "Gerhart-Hauptmann-Platz (soon)", lat: 53.5511, lng: 9.9937, link: "#gerhard-hauptmann-platz" },
+  { name: "University of Hamburg (soon)", lat: 53.5667, lng: 9.9833, link: "#uni-hamburg" },
+  { name: "Marco-Polo-Terassen (soon)", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
 
 export default function Map() {
@@ -41,7 +41,7 @@ export default function Map() {
             icon={icon}
           >
             <Popup>
-              <div className="font-semibold">{location.name}</div>
+              <div className="font-semibold"><a href={location.link}>{location.name}</a></div>
               {treeData.filter(item => item["Unnamed: 0"] === location.name).map((tree, i) => (
                 <div key={i} className="text-sm">{tree["Unnamed: 2"]}</div>
               ))}

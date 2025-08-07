@@ -28,8 +28,8 @@ function App() {
       </div>
 
       {/* Tree Stories Section */}
-      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8" id="about">
-        <h2 className="text-white text-4xl font-bold">About</h2>
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 " id="about">
+        <h2 className="text-white text-4xl font-bold text-center">About</h2>
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <p className="text-gray-300">
             From July to September 2025, Parlament der Bäume transforms the city of Hamburg into a walkable soundscape. Trees in urban space become poetic narrators – their voices can be heard through site-specific sound installations. The project weaves together ecological research, sound art, and participatory formats.
@@ -43,7 +43,7 @@ function App() {
 
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="trees">
-        <h2 className="text-white text-4xl font-bold">Trees</h2>
+        <h2 className="text-white text-4xl font-bold text-center">Trees</h2>
         
          {/* Map Section */}
         <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@ function App() {
       
         {/* every tree gets an own div identified by it's id */} 
         <div id="marco-polo-terassen">
-         <h3 className="text-white text-2xl font-bold py-8">Marco-Polo-Terassen</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
           <img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -82,7 +82,7 @@ function App() {
         </div>
 
         <div id="kloppstock-linde" className="py-4">
-         <h3 className="text-white text-2xl font-bold py-8">Kloppstock-Linde</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde</h3>
           <img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -107,7 +107,7 @@ function App() {
         </div>
 
         <div id="uni-hamburg" className="py-4">
-         <h3 className="text-white text-2xl font-bold py-8">University of Hamburg</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">University of Hamburg</h3>
           <img src="https://placehold.co/600x400" alt="Uni Hamburg"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -133,7 +133,7 @@ function App() {
 
 
         <div id="planten-un-blomen" className="py-4">
-         <h3 className="text-white text-2xl font-bold py-8">Planten un Blomen</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Planten un Blomen</h3>
           <img src="https://placehold.co/600x400" alt="Planten un Blomen"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -158,7 +158,7 @@ function App() {
         </div>
 
         <div id="gerhard-hauptmann-platz" className="py-4">
-         <h3 className="text-white text-2xl font-bold py-8">Gerhart-Hauptmann-Platz</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Gerhart-Hauptmann-Platz</h3>
           <img src="https://placehold.co/600x400" alt="Gerhart-Hauptmann-Platz"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -184,7 +184,7 @@ function App() {
 
 
         <div id="lohsepark" className="py-4">
-         <h3 className="text-white text-2xl font-bold py-8">Lohsepark</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Lohsepark</h3>
           <img src="https://placehold.co/600x400" alt="Lohsepark"/>
           <p className="text-gray-300 py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
@@ -213,7 +213,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="archive">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold">Archive</h2>
+          <h2 className="text-white text-4xl font-bold text-center">Archive</h2>
           <p className="text-gray-300 mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
           </p>
@@ -223,7 +223,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="network">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold">Network</h2>
+          <h2 className="text-white text-4xl font-bold text-center">Network</h2>
           <p className="text-gray-300 mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
           </p>
@@ -233,7 +233,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="team">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold">Team</h2>
+          <h2 className="text-white text-4xl font-bold text-center">Team</h2>
           <p className="text-gray-300 mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
           </p>
@@ -243,7 +243,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="contact">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold">Contact</h2>
+          <h2 className="text-white text-4xl font-bold text-center">Contact</h2>
           <p className="text-gray-300 mt-6">
             More information coming soon.<br />
             Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />
@@ -252,7 +252,7 @@ function App() {
         </div>
       </section>
 
-     
+     <hr></hr>
 
       {/* Bottom Links Section */}
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
