@@ -22,4 +22,4 @@ This project is intended for development, demonstration, or educational purposes
 
 ---
 
-For questions or to report new vulnerabilities, please open an issue or contact the maintainer.
+For questions or to report new vulnerabilities, please open an issue.
