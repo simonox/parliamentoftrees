@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import Map from './components/Map';
 import { Leaf, MessageCircle } from 'lucide-react';
+import { PlayButton, Timer } from 'react-soundplayer/components';
+import { withCustomAudio } from 'react-soundplayer/addons';
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
       </div>
 
       {/* Tree Stories Section */}
-      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8" id="about">
+        <h2 className="text-white text-4xl font-bold">About</h2>
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <p className="text-gray-300">
             From July to September 2025, Parlament der Bäume transforms the city of Hamburg into a walkable soundscape. Trees in urban space become poetic narrators – their voices can be heard through site-specific sound installations. The project weaves together ecological research, sound art, and participatory formats.
@@ -38,15 +41,218 @@ function App() {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="mt-4 text-lg text-gray-300">
-            Discover the location of Hamburg's trees and their stories
+
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="trees">
+        <h2 className="text-white text-4xl font-bold">Trees</h2>
+        
+         {/* Map Section */}
+        <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="mt-4 text-lg text-gray-300">
+              Discover the location of Hamburg's trees and their stories
+            </p>
+          </div>
+          <Map />
+        </section>
+      
+        {/* every tree gets an own div identified by it's id */} 
+        <div id="marco-polo-terassen">
+         <h3 className="text-white text-2xl font-bold py-8">Marco-Polo-Terassen</h3>
+          <img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+        <div id="kloppstock-linde" className="py-4">
+         <h3 className="text-white text-2xl font-bold py-8">Kloppstock-Linde</h3>
+          <img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+        <div id="uni-hamburg" className="py-4">
+         <h3 className="text-white text-2xl font-bold py-8">University of Hamburg</h3>
+          <img src="https://placehold.co/600x400" alt="Uni Hamburg"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+
+        <div id="planten-un-blomen" className="py-4">
+         <h3 className="text-white text-2xl font-bold py-8">Planten un Blomen</h3>
+          <img src="https://placehold.co/600x400" alt="Planten un Blomen"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+        <div id="gerhard-hauptmann-platz" className="py-4">
+         <h3 className="text-white text-2xl font-bold py-8">Gerhart-Hauptmann-Platz</h3>
+          <img src="https://placehold.co/600x400" alt="Gerhart-Hauptmann-Platz"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+
+        <div id="lohsepark" className="py-4">
+         <h3 className="text-white text-2xl font-bold py-8">Lohsepark</h3>
+          <img src="https://placehold.co/600x400" alt="Lohsepark"/>
+          <p className="text-gray-300 py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+        
+      </section>
+
+
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="archive">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+          <h2 className="text-white text-4xl font-bold">Archive</h2>
+          <p className="text-gray-300 mt-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
           </p>
         </div>
-        <Map />
       </section>
+
+
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="network">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+          <h2 className="text-white text-4xl font-bold">Network</h2>
+          <p className="text-gray-300 mt-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+        </div>
+      </section>
+
+
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="team">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+          <h2 className="text-white text-4xl font-bold">Team</h2>
+          <p className="text-gray-300 mt-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+        </div>
+      </section>
+
+
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="contact">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+          <h2 className="text-white text-4xl font-bold">Contact</h2>
+          <p className="text-gray-300 mt-6">
+            More information coming soon.<br />
+            Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />
+            <a href="mailto:julia.nordholz@gmail.com" className="text-cyan-400 hover:text-cyan-300 underline">julia.nordholz@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+     
 
       {/* Bottom Links Section */}
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -62,11 +268,10 @@ function App() {
           
           <div>
             <h2 className="text-2xl font-bold text-gray-300 mb-4">
-              Impressum Link
+              Impressum 
             </h2>
-            <a href="#" className="text-cyan-400 hover:text-cyan-300 underline text-lg">
-              Impressum
-            </a>
+            <p className="text-gray-300 text-lg">Verantwortlich für die Inhalte dieser Seite: Julia Nordholz</p>
+            <p className="text-gray-300 text-lg">Kontakt: <a href='mailto:julia.nordholz@gmail.com' className="text-cyan-400 hover:text-cyan-300 underline">julia.nordholz@gmail.com</a></p>
           </div>
           
           <div>
