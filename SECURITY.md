@@ -12,6 +12,8 @@ This project is intended for development, demonstration, or educational purposes
   - Other moderate and high severity issues
 - See your package manager's audit logs and GitHub security alerts for details.
 
+At the moment of writing, GitHub found 14 vulnerabilities on simonox/parliamentoftrees's default branch (1 high, 9 moderate, 4 low).
+
 ### Recommendations
 - **Do not deploy this project to production environments.**
 - Use only for local development or non-sensitive demos.
