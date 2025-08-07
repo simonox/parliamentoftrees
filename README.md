@@ -21,7 +21,6 @@ A walkable soundscape web app for Hamburg, featuring interactive maps, tree stor
 - **Styling:** Tailwind CSS for utility-first styling, custom CSS for animations.
 - **Map:** Leaflet (via react-leaflet) for interactive maps and markers.
 - **Audio:** Custom SoundCloud-style audio player using `react-soundplayer`.
-- **Data:** Static JSON file for tree and location data.
 - **Navigation:** Responsive, mobile-friendly navigation with anchor links and smooth scrolling.
 - **Static Assets:** Served from the `public/` directory.
 
