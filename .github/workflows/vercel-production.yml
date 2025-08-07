@@ -1,7 +1,7 @@
-name: Vercel Preview Deployment
+name: Vercel Production Deployment
 
 on:
-  pull_request:
+  push:
     branches:
       - main
   workflow_dispatch:
@@ -12,10 +12,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Vercel Preview Deployment
+      - name: Vercel Production Deployment
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
           working-directory: .
