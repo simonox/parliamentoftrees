@@ -119,7 +119,7 @@ npm run preview
 ## Working with the Project
 
 - **Static Files**: Place images, audio, etc. in the `public/` directory. Reference them as `/filename.ext` in your code.
-- **Map Data**: Update `src/data/data.json` to add or modify tree/location data.
+- **Map Data**: Update `Map.tsx` to add or modify tree/location data.
 - **Navigation**: Edit `src/components/Navigation.tsx` for menu items and anchor links.
 - **Styling**: Use Tailwind utility classes in your components, or add custom CSS to `src/index.css`.
 - **Audio Player**: The custom player is implemented in `App.tsx` using `react-soundplayer`.
