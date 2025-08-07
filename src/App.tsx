@@ -30,7 +30,7 @@ function App() {
       {/* Tree Stories Section */}
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 " id="about">
         <h2 className="text-white text-4xl font-bold text-center">About</h2>
-        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl py-8 px-4">
           <p className="text-gray-300">
             From July to September 2025, Parlament der Bäume transforms the city of Hamburg into a walkable soundscape. Trees in urban space become poetic narrators – their voices can be heard through site-specific sound installations. The project weaves together ecological research, sound art, and participatory formats.
           </p>
