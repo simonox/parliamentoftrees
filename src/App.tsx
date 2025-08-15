@@ -251,6 +251,17 @@ function App() {
           */}
         </div>
 
+
+
+        <div id="ailanthus" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Ailanthus (Bezirksamt)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Ailanthus"/>*/}
+          <p className="text-gray-300 py-4">
+            Coming soon.
+          </p>
+        </div>
+
+        
         <div id="marco-polo-terassen" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
           {/*<img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>*/}

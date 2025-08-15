@@ -23,8 +23,13 @@ const locations = [
 
   { name: "Five Plane Trees (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
 
+  { name: "Ailanthus (Bezirksamt)", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
+
+
   { name: "Lohsepark", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
   { name: "Marco-Polo-Terassen", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
+
+
 ];
 
 export default function Map() {
