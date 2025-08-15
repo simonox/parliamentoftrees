@@ -13,11 +13,17 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Planten un Blomen", lat: 53.5619, lng: 9.9833, link: "#planten-un-blomen" },
-  { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
+  { name: "Lehmann-Platane (Planten un Blomen)", lat: 53.560633, lng: 9.986840, link: "#lehmann-platane" },
+  { name: "Exeter-Ulme (Planten un Blomen)", lat: 53.560101, lng: 9.988231, link: "#exeter-ulme" },
+
+  { name: "Glaskirsche (University of Hamburg)", lat: 53.566693, lng: 9.984607, link: "#glaskirsche" },
+  { name: "Sumpfeiche (University of Hamburg)", lat: 53.566830, lng: 9.984678, link: "#sumpfeiche" },
+  
+  { name: "Kloppstock-Linde (An der Christianskirche Altona)", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
+
+  { name: "Five Plane Trees (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
+
   { name: "Lohsepark", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
-  { name: "Gerhart-Hauptmann-Platz", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
-  { name: "University of Hamburg", lat: 53.5667, lng: 9.9833, link: "#uni-hamburg" },
   { name: "Marco-Polo-Terassen", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
 
@@ -28,7 +34,7 @@ export default function Map() {
         center={[53.5511, 9.9937]}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: '100%', width: '100%', zIndex: 5}}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

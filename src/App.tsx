@@ -51,18 +51,8 @@ function App() {
           <Map />
         </section>
       
-        {/* every tree gets an own div identified by it's id */} 
-        <div id="marco-polo-terassen" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
-          <img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>
-          <p className="text-gray-300 py-4">
-            Coming soon.
-          </p>
-         
-        </div>
-
- <div id="gerhard-hauptmann-platz" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Gerhart-Hauptmann-Platz</h3>
+       <div id="gerhard-hauptmann-platz" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Five Plane Trees (Gerhart-Hauptmann-Platz)</h3>
          <h4>Conversation of the Five Plane Trees</h4>  
           <p className="text-gray-300 py-4">
             Created as part of the art project at the Stadtteilschule Eidelstedt          </p>
@@ -105,7 +95,7 @@ function App() {
 
 
         <div id="kloppstock-linde" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde (An der Christianskirche Altona)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -130,9 +120,35 @@ function App() {
           */}
         </div>
 
-        <div id="uni-hamburg" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">University of Hamburg</h3>
-          {/*<img src="https://placehold.co/600x400" alt="Uni Hamburg"/>*/}
+        <div id="glaskirsche" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Glaskirsche (University of Hamburg)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Glaskirsche"/>*/}
+          <p className="text-gray-300 py-4">
+            Coming soon.
+          </p>
+          {/* Custom SoundCloud-style audio player 
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+          */}
+        </div>
+
+         <div id="sumpfeiche" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Sumpfeiche (University of Hamburg)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Sumpfeiche"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
           </p>
@@ -157,9 +173,35 @@ function App() {
         </div>
 
 
-        <div id="planten-un-blomen" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Planten un Blomen</h3>
-          {/*<img src="https://placehold.co/600x400" alt="Planten un Blomen"/>*/}
+        <div id="lehmann-platane" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Lehmann-Platane (Planten un Blomen)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Lehmann-Platane"/>*/}
+          <p className="text-gray-300 py-4">
+            Coming soon.
+          </p>
+          {/* Custom SoundCloud-style audio player 
+          {(() => {
+            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
+            const trackTitle = "Test Audio";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+          */}
+        </div>
+
+         <div id="exeter-ulme" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Exeter-Ulme (Planten un Blomen)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Exeter-Ulme"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
           </p>
@@ -208,6 +250,15 @@ function App() {
           })()}
           */}
         </div>
+
+        <div id="marco-polo-terassen" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>*/}
+          <p className="text-gray-300 py-4">
+            Coming soon.
+          </p>
+        </div>
+
         
       </section>
 
@@ -245,7 +296,7 @@ function App() {
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <h2 className="text-white text-4xl font-bold text-center">Contact</h2>
           <p className="text-gray-300 mt-6">
-            More information coming soon.<br />
+            More information coming soon.<br /><br />
             Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />
             <a href="mailto:julia.nordholz@gmail.com" className="text-cyan-400 hover:text-cyan-300 underline">julia.nordholz@gmail.com</a>
           </p>
