@@ -34,10 +34,6 @@ function App() {
           <p className="text-gray-300">
             From July to September 2025, Parlament der Bäume transforms the city of Hamburg into a walkable soundscape. Trees in urban space become poetic narrators – their voices can be heard through site-specific sound installations. The project weaves together ecological research, sound art, and participatory formats.
           </p>
-          <p className="text-gray-300 mt-6">
-            More information coming soon.<br />
-            Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a>
-          </p>
         </div>
       </section>
 
@@ -60,12 +56,38 @@ function App() {
          <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
           <img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
+         
+        </div>
+
+ <div id="gerhard-hauptmann-platz" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Gerhart-Hauptmann-Platz</h3>
+         <h4>Conversation of the Five Plane Trees</h4>  
+          <p className="text-gray-300 py-4">
+            Created as part of the art project at the Stadtteilschule Eidelstedt          </p>
+          <p className="text-gray-300 py-4">
+            The sound installation at Gerhart-Hauptmann-Platz is the result of a project with students from STS Eidelstedt.<br /><br />
+            Under the artistic direction of Julia Nordholz, and in collaboration with Martin Muth, Matthias Schubert, and Charlotte Höflich, debating, speech, and field recording workshops were held in July 2025.<br /><br />
+            During these sessions, the students developed their own texts from the perspective of the plane trees on the square, recorded them, and thus created a multi-voiced conversation between the trees.
+          </p>
+          <p className="text-gray-300 py-4">
+            <b>Participating students:</b>
+            <ul className="list-disc py-4 px-4">
+              <li>Grade 11: Lennard, Yusra, Devrim, Incilay, Satyam</li>
+              <li>Grade 10: Josephine</li>
+              <li>Grade 7: Ronja, Sina, Anna</li>
+              <li>Grade 6: Amelia, Christiane, Maja, Reyhan</li>
+              <li>Grade 5: Lojayn, Fatoumata, Abuzar, Oliver</li>
+            </ul>
+          </p>
+          <p className="text-gray-300 py-4">
+            In Kooperation mit den Kulturagent*innen Hamburg (Julie Kuhn und Matthias Anton) und WeField e.V.
+            Herzlichen Dank an die LAG Kinder- und Jugendkultur e.V. für die Förderung über den Projektfonds Kultur & Schule.          </p>
           {/* Custom SoundCloud-style audio player */}
           {(() => {
-            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
-            const trackTitle = "Test Audio";
+            const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
+            const trackTitle = "Conversation of the Five Plane Trees";
             const CustomPlayer = withCustomAudio((props) => {
               return (
                 <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
@@ -81,13 +103,14 @@ function App() {
           })()}
         </div>
 
+
         <div id="kloppstock-linde" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde</h3>
-          <img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>
+          {/*<img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>*/}
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
-          {/* Custom SoundCloud-style audio player */}
+          {/* Custom SoundCloud-style audio player 
           {(() => {
             const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
             const trackTitle = "Test Audio";
@@ -104,15 +127,16 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
+          */}
         </div>
 
         <div id="uni-hamburg" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">University of Hamburg</h3>
-          <img src="https://placehold.co/600x400" alt="Uni Hamburg"/>
+          {/*<img src="https://placehold.co/600x400" alt="Uni Hamburg"/>*/}
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
-          {/* Custom SoundCloud-style audio player */}
+          {/* Custom SoundCloud-style audio player 
           {(() => {
             const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
             const trackTitle = "Test Audio";
@@ -129,16 +153,17 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
+          */}
         </div>
 
 
         <div id="planten-un-blomen" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Planten un Blomen</h3>
-          <img src="https://placehold.co/600x400" alt="Planten un Blomen"/>
+          {/*<img src="https://placehold.co/600x400" alt="Planten un Blomen"/>*/}
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
-          {/* Custom SoundCloud-style audio player */}
+          {/* Custom SoundCloud-style audio player 
           {(() => {
             const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
             const trackTitle = "Test Audio";
@@ -155,61 +180,16 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
+          */}
         </div>
-
-        <div id="gerhard-hauptmann-platz" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Gerhart-Hauptmann-Platz</h3>
-         <h4>Gespräch der fünf Platanen</h4>  
-          <p className="text-gray-300 py-4">
-            Entstanden im Rahmen des Kunstprojekts an der Stadtteilschule Eidelstedt
-          </p>
-          <p className="text-gray-300 py-4">
-            Die Klanginstallation am Gerhart-Hauptmann-Platz ist das Ergebnis eines Projekts mit Schülerinnen der STS Eidelstedt.<br /><br />
-            Unter der künstlerischen Leitung von Julia Nordholz und in Zusammenarbeit mit Martin Muth, Matthias Schubert und Charlotte Höflich wurden im Juli 2025 Debattier-, Sprech- und Field-Recording-Workshops durchgeführt.<br /><br />
-            Darin entwickelten die Schüler*innen eigene Texte aus der Perspektive der Platanen des Platzes, nahmen diese auf und gestalteten so ein vielstimmiges Gespräch zwischen den Bäumen.
-          </p>
-          <p className="text-gray-300 py-4">
-            <b>Mitwirkende Schüler*innen:</b>
-            <ul className="list-disc py-4 px-4">
-              <li>Klasse 11: Lennard, Yusra, Devrim, Incilay, Satyam</li>
-              <li>Klasse 10: Josephine</li>
-              <li>Klasse 8: tba</li>
-              <li>Klasse 7: Ronja, Sina, Anna</li>
-              <li>Klasse 6: Amelia, Christiane, Maja, Reyhan</li>
-              <li>Klasse 5: Lojayn, Fatoumata, Abuzar, Oliver</li>
-            </ul>
-          </p>
-          <p className="text-gray-300 py-4">
-            In Kooperation mit den Kulturagent*innen Hamburg (Julie Kuhn und Matthias Anton) und WeField e.V. <br /><br />
-            Herzlichen Dank an die LAG Kinder- und Jugendkultur e.V. für die Förderung über den Projektfonds Kultur & Schule.          
-          </p>
-          {/* Custom SoundCloud-style audio player */}
-          {(() => {
-            const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
-            const trackTitle = "Gespräch der fünf Platanen";
-            const CustomPlayer = withCustomAudio((props) => {
-              return (
-                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
-                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
-                  <div className="flex-1">
-                    <div className="font-bold text-white text-lg">{trackTitle}</div>
-                    <Timer {...props} className="text-gray-300" />
-                  </div>
-                </div>
-              );
-            });
-            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
-          })()}
-        </div>
-
 
         <div id="lohsepark" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Lohsepark</h3>
-          <img src="https://placehold.co/600x400" alt="Lohsepark"/>
+          {/* <img src="https://placehold.co/600x400" alt="Lohsepark"/> */}
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
-          {/* Custom SoundCloud-style audio player */}
+          {/* Custom SoundCloud-style audio player 
           {(() => {
             const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
             const trackTitle = "Test Audio";
@@ -226,16 +206,16 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
+          */}
         </div>
         
       </section>
-
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="archive">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <h2 className="text-white text-4xl font-bold text-center">Archive</h2>
           <p className="text-gray-300 mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
         </div>
       </section>
@@ -245,7 +225,7 @@ function App() {
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <h2 className="text-white text-4xl font-bold text-center">Network</h2>
           <p className="text-gray-300 mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
         </div>
       </section>
@@ -255,7 +235,7 @@ function App() {
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <h2 className="text-white text-4xl font-bold text-center">Team</h2>
           <p className="text-gray-300 mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Coming soon.
           </p>
         </div>
       </section>
