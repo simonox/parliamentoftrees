@@ -19,11 +19,6 @@ function App() {
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto text-center">
             a project by Julia Nordholz
           </p>
-          <div className="mt-4 overflow-hidden">
-            <div className="animate-scroll whitespace-nowrap text-gray-300 text-2xl font-bold">
-              Opening 8th August 6pm Alter Botanischer Garten, Planten un Blomen, Hamburg
-            </div>
-          </div>
         </div>
       </div>
 
@@ -52,10 +47,10 @@ function App() {
         </section>
       
        <div id="gerhard-hauptmann-platz" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Five Plane Trees (Gerhart-Hauptmann-Platz)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">5 Platanen (Gerhart-Hauptmann-Platz))</h3>
          <h4>Conversation of the Five Plane Trees</h4>  
           <p className="text-gray-300 py-4">
-            Created as part of the art project at the Stadtteilschule Eidelstedt          </p>
+            Created as part of the art project at the Stadtteilschule Eidelstedt</p>
           <p className="text-gray-300 py-4">
             The sound installation at Gerhart-Hauptmann-Platz is the result of a project with students from STS Eidelstedt.<br /><br />
             Under the artistic direction of Julia Nordholz, and in collaboration with Martin Muth, Matthias Schubert, and Charlotte Höflich, debating, speech, and field recording workshops were held in July 2025.<br /><br />
@@ -72,12 +67,13 @@ function App() {
             </ul>
           </p>
           <p className="text-gray-300 py-4">
-            In Kooperation mit den Kulturagent*innen Hamburg (Julie Kuhn und Matthias Anton) und WeField e.V.
-            Herzlichen Dank an die LAG Kinder- und Jugendkultur e.V. für die Förderung über den Projektfonds Kultur & Schule.          </p>
+            In cooperation with the Kulturagent*innen Hamburg (Julie Kuhn and Matthias Anton) and WeField e.V.<br /><br />
+            Special thanks to LAG Kinder- und Jugendkultur e.V. for supporting the project through the Project Fund Culture & School.
+          </p>
           {/* Custom SoundCloud-style audio player */}
           {(() => {
             const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
-            const trackTitle = "Conversation of the Five Plane Trees";
+            const trackTitle = "Conversation of the Five Plane Trees - Stadtteilschule Eidelstedt";
             const CustomPlayer = withCustomAudio((props) => {
               return (
                 <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
@@ -93,9 +89,60 @@ function App() {
           })()}
         </div>
 
+        <div id="lehmann-platane" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Lehmann-Platane"/>*/}
+          <p className="text-gray-300 py-4">
+            Narrator: Lisa Hagmeister
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/250801_Lehmann_Platane_V1.mp3";
+            const trackTitle = "Lehmann-Platane - Lisa Hagmeister";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
+        <div id="exeter-ulme" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Exeter-Ulme (Alter Botanischer Garten, Planten un Blomen)</h3>
+          {/*<img src="https://placehold.co/600x400" alt="Exeter-Ulme"/>*/}
+          <p className="text-gray-300 py-4">
+            Narrator: Bjarne Mädel
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/250709_Exeter_UlmeV2_final.mp3";
+            const trackTitle = "Exeter-Ulme - Bjarne Mädel";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+
+        </div>
+
 
         <div id="kloppstock-linde" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde (An der Christianskirche Altona)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Klopstock-Linde (Christianskirche, Altona)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -171,62 +218,9 @@ function App() {
           })()}
           */}
         </div>
-
-
-        <div id="lehmann-platane" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Lehmann-Platane (Planten un Blomen)</h3>
-          {/*<img src="https://placehold.co/600x400" alt="Lehmann-Platane"/>*/}
-          <p className="text-gray-300 py-4">
-            Coming soon.
-          </p>
-          {/* Custom SoundCloud-style audio player 
-          {(() => {
-            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
-            const trackTitle = "Test Audio";
-            const CustomPlayer = withCustomAudio((props) => {
-              return (
-                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
-                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
-                  <div className="flex-1">
-                    <div className="font-bold text-white text-lg">{trackTitle}</div>
-                    <Timer {...props} className="text-gray-300" />
-                  </div>
-                </div>
-              );
-            });
-            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
-          })()}
-          */}
-        </div>
-
-         <div id="exeter-ulme" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Exeter-Ulme (Planten un Blomen)</h3>
-          {/*<img src="https://placehold.co/600x400" alt="Exeter-Ulme"/>*/}
-          <p className="text-gray-300 py-4">
-            Coming soon.
-          </p>
-          {/* Custom SoundCloud-style audio player 
-          {(() => {
-            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
-            const trackTitle = "Test Audio";
-            const CustomPlayer = withCustomAudio((props) => {
-              return (
-                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
-                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
-                  <div className="flex-1">
-                    <div className="font-bold text-white text-lg">{trackTitle}</div>
-                    <Timer {...props} className="text-gray-300" />
-                  </div>
-                </div>
-              );
-            });
-            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
-          })()}
-          */}
-        </div>
-
+        
         <div id="lohsepark" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Lohsepark</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Kirschbäume (Lohsepark, entrance at Yokohamastraße)</h3>
           {/* <img src="https://placehold.co/600x400" alt="Lohsepark"/> */}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -254,7 +248,7 @@ function App() {
 
 
         <div id="ailanthus" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Ailanthus (Bezirksamt)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) </h3>
           {/*<img src="https://placehold.co/600x400" alt="Ailanthus"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -263,7 +257,7 @@ function App() {
 
         
         <div id="marco-polo-terassen" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Sumpfzypresse (Marco-Polo-Terassen) </h3>
           {/*<img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.

@@ -13,23 +13,21 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Lehmann-Platane (Planten un Blomen)", lat: 53.560633, lng: 9.986840, link: "#lehmann-platane" },
-  { name: "Exeter-Ulme (Planten un Blomen)", lat: 53.560101, lng: 9.988231, link: "#exeter-ulme" },
+  { name: "Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)", lat: 53.560633, lng: 9.986840, link: "#lehmann-platane" },
+  { name: "Exeter-Ulme (Alter Botanischer Garten, Planten un Blomen)", lat: 53.560101, lng: 9.988231, link: "#exeter-ulme" },
 
   { name: "Glaskirsche (University of Hamburg)", lat: 53.566693, lng: 9.984607, link: "#glaskirsche" },
   { name: "Sumpfeiche (University of Hamburg)", lat: 53.566830, lng: 9.984678, link: "#sumpfeiche" },
   
-  { name: "Kloppstock-Linde (An der Christianskirche Altona)", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
+  { name: "Klopstock-Linde (Christianskirche, Altona)", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
 
-  { name: "Five Plane Trees (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
+  { name: "5 Platanen (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
 
-  { name: "Ailanthus (Bezirksamt)", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
+  { name: "Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) -> soon", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
 
+  { name: "Kirschbäume (Lohsepark, entrance at Yokohamastraße) -> soon", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
 
-  { name: "Lohsepark", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
-  { name: "Marco-Polo-Terassen", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
-
-
+  { name: "Sumpfzypresse (Marco-Polo-Terassen) -> soon", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
 
 export default function Map() {
