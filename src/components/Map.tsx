@@ -13,12 +13,12 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833, link: "#planten-un-blomen" },
+  { name: "Planten un Blomen", lat: 53.5619, lng: 9.9833, link: "#planten-un-blomen" },
   { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
-  { name: "Lohsepark (soon)", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
-  { name: "Gerhart-Hauptmann-Platz", lat: 53.5511, lng: 9.9937, link: "#gerhard-hauptmann-platz" },
-  { name: "University of Hamburg (soon)", lat: 53.5667, lng: 9.9833, link: "#uni-hamburg" },
-  { name: "Marco-Polo-Terassen (soon)", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
+  { name: "Lohsepark", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
+  { name: "Gerhart-Hauptmann-Platz", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
+  { name: "University of Hamburg", lat: 53.5667, lng: 9.9833, link: "#uni-hamburg" },
+  { name: "Marco-Polo-Terassen", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
 
 export default function Map() {
