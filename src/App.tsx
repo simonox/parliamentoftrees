@@ -56,7 +56,7 @@ function App() {
         </section>
       
         {/* every tree gets an own div identified by it's id */} 
-        <div id="marco-polo-terassen">
+        <div id="marco-polo-terassen" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Marco-Polo-Terassen</h3>
           <img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>
           <p className="text-gray-300 py-4">
@@ -81,7 +81,7 @@ function App() {
           })()}
         </div>
 
-        <div id="kloppstock-linde" className="py-4">
+        <div id="kloppstock-linde" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Kloppstock-Linde</h3>
           <img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>
           <p className="text-gray-300 py-4">
@@ -106,7 +106,7 @@ function App() {
           })()}
         </div>
 
-        <div id="uni-hamburg" className="py-4">
+        <div id="uni-hamburg" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">University of Hamburg</h3>
           <img src="https://placehold.co/600x400" alt="Uni Hamburg"/>
           <p className="text-gray-300 py-4">
@@ -132,7 +132,7 @@ function App() {
         </div>
 
 
-        <div id="planten-un-blomen" className="py-4">
+        <div id="planten-un-blomen" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Planten un Blomen</h3>
           <img src="https://placehold.co/600x400" alt="Planten un Blomen"/>
           <p className="text-gray-300 py-4">
@@ -157,16 +157,36 @@ function App() {
           })()}
         </div>
 
-        <div id="gerhard-hauptmann-platz" className="py-4">
+        <div id="gerhard-hauptmann-platz" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Gerhart-Hauptmann-Platz</h3>
-          <img src="https://placehold.co/600x400" alt="Gerhart-Hauptmann-Platz"/>
+         <h4>Gespräch der fünf Platanen</h4>  
           <p className="text-gray-300 py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Entstanden im Rahmen des Kunstprojekts an der Stadtteilschule Eidelstedt
+          </p>
+          <p className="text-gray-300 py-4">
+            Die Klanginstallation am Gerhart-Hauptmann-Platz ist das Ergebnis eines Projekts mit Schülerinnen der STS Eidelstedt.<br /><br />
+            Unter der künstlerischen Leitung von Julia Nordholz und in Zusammenarbeit mit Martin Muth, Matthias Schubert und Charlotte Höflich wurden im Juli 2025 Debattier-, Sprech- und Field-Recording-Workshops durchgeführt.<br /><br />
+            Darin entwickelten die Schüler*innen eigene Texte aus der Perspektive der Platanen des Platzes, nahmen diese auf und gestalteten so ein vielstimmiges Gespräch zwischen den Bäumen.
+          </p>
+          <p className="text-gray-300 py-4">
+            <b>Mitwirkende Schüler*innen:</b>
+            <ul className="list-disc py-4 px-4">
+              <li>Klasse 11: Lennard, Yusra, Devrim, Incilay, Satyam</li>
+              <li>Klasse 10: Josephine</li>
+              <li>Klasse 8: tba</li>
+              <li>Klasse 7: Ronja, Sina, Anna</li>
+              <li>Klasse 6: Amelia, Christiane, Maja, Reyhan</li>
+              <li>Klasse 5: Lojayn, Fatoumata, Abuzar, Oliver</li>
+            </ul>
+          </p>
+          <p className="text-gray-300 py-4">
+            In Kooperation mit den Kulturagent*innen Hamburg (Julie Kuhn und Matthias Anton) und WeField e.V. <br /><br />
+            Herzlichen Dank an die LAG Kinder- und Jugendkultur e.V. für die Förderung über den Projektfonds Kultur & Schule.          
           </p>
           {/* Custom SoundCloud-style audio player */}
           {(() => {
-            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
-            const trackTitle = "Test Audio";
+            const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
+            const trackTitle = "Gespräch der fünf Platanen";
             const CustomPlayer = withCustomAudio((props) => {
               return (
                 <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
@@ -183,7 +203,7 @@ function App() {
         </div>
 
 
-        <div id="lohsepark" className="py-4">
+        <div id="lohsepark" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Lohsepark</h3>
           <img src="https://placehold.co/600x400" alt="Lohsepark"/>
           <p className="text-gray-300 py-4">
