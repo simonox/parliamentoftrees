@@ -13,12 +13,21 @@ const icon = new Icon({
 });
 
 const locations = [
-  { name: "Planten un Blomen (soon)", lat: 53.5619, lng: 9.9833 },
-  { name: "An der Christianskirche Altona", lat: 53.5524, lng: 9.9338 },
-  { name: "Lohsepark (soon)", lat: 53.5451, lng: 10.0024 },
-  { name: "Gerhart-Hauptmann-Platz (soon)", lat: 53.5511, lng: 9.9937 },
-  { name: "University of Hamburg (soon)", lat: 53.5667, lng: 9.9833 },
-  { name: "Marco-Polo-Terassen (soon)", lat: 53.5433, lng: 9.9917 }
+  { name: "Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)", lat: 53.560633, lng: 9.986840, link: "#lehmann-platane" },
+  { name: "Exeter-Ulme (Alter Botanischer Garten, Planten un Blomen)", lat: 53.560101, lng: 9.988231, link: "#exeter-ulme" },
+
+  { name: "Glaskirsche (University of Hamburg)", lat: 53.566693, lng: 9.984607, link: "#glaskirsche" },
+  { name: "Sumpfeiche (University of Hamburg)", lat: 53.566830, lng: 9.984678, link: "#sumpfeiche" },
+  
+  { name: "Klopstock-Linde (Christianskirche, Altona)", lat: 53.5524, lng: 9.9338, link: "#kloppstock-linde" },
+
+  { name: "5 Platanen (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
+
+  { name: "Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) -> soon", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
+
+  { name: "Kirschbäume (Lohsepark, entrance at Yokohamastraße) -> soon", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
+
+  { name: "Sumpfzypresse (Marco-Polo-Terassen) -> soon", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
 
 export default function Map() {
@@ -28,7 +37,7 @@ export default function Map() {
         center={[53.5511, 9.9937]}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: '100%', width: '100%', zIndex: 5}}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -41,7 +50,7 @@ export default function Map() {
             icon={icon}
           >
             <Popup>
-              <div className="font-semibold">{location.name}</div>
+              <div className="font-semibold"><a href={location.link}>{location.name}</a></div>
               {treeData.filter(item => item["Unnamed: 0"] === location.name).map((tree, i) => (
                 <div key={i} className="text-sm">{tree["Unnamed: 2"]}</div>
               ))}
