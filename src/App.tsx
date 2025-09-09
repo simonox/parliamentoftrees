@@ -140,6 +140,31 @@ function App() {
 
         </div>
 
+ <div id="ailanthus" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) </h3>
+          {/*<img src="https://placehold.co/600x400" alt="Ailanthus"/>*/}
+          <p className="text-gray-300 py-4">
+            Narrator: Lina Beckmann
+          </p>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/250819_PDB_Goetterbaum.mp3";
+            const trackTitle = "Götterbaum - Lina Beckmann";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()}
+        </div>
+
 
         <div id="kloppstock-linde" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Klopstock-Linde (Christianskirche, Altona)</h3>
@@ -243,16 +268,6 @@ function App() {
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
           */}
-        </div>
-
-
-
-        <div id="ailanthus" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) </h3>
-          {/*<img src="https://placehold.co/600x400" alt="Ailanthus"/>*/}
-          <p className="text-gray-300 py-4">
-            Coming soon.
-          </p>
         </div>
 
         
