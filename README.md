@@ -115,8 +115,8 @@ npm run preview
 ## Automated Workflows
 
 - **Dependabot**: Weekly scans for npm dependency updates (`.github/dependabot.yml`).
-- **Vercel Preview Deployments**: ~ GitHub Action for preview deployments on PRs (`.github/workflows/vercel-preview.yml`).~ -> replaced by vercelbot
-- **Vercel Production Deployments**: ~ GitHub Action for production deployments on merging PRs into main (`.github/workflows/vercel-production.yml`).~  -> replaced by vercelbot
+- **Vercel Preview Deployments**: vercelbot
+- **Vercel Production Deployments**: vercelbot
 
 
 ## Working with the Project
