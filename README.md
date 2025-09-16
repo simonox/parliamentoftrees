@@ -17,7 +17,7 @@ A walkable soundscape web app for Hamburg, featuring interactive maps, tree stor
 
 ## Architecture
 
-- **Frontend:** React 18 (with TypeScript), Vite for fast builds and HMR.
+- **Frontend:** React 19 (with TypeScript), Vite for fast builds and HMR.
 - **Styling:** Tailwind CSS for utility-first styling, custom CSS for animations.
 - **Map:** Leaflet (via react-leaflet) for interactive maps and markers.
 - **Audio:** Custom SoundCloud-style audio player using `react-soundplayer`.
