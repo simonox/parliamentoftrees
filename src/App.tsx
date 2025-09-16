@@ -170,12 +170,12 @@ function App() {
          <h3 className="text-white text-2xl font-bold py-8 text-center">Klopstock-Linde (Christianskirche, Altona)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>*/}
           <p className="text-gray-300 py-4">
-            Coming soon.
+            Narrator: Tilo Werner
           </p>
-          {/* Custom SoundCloud-style audio player 
+          {/* Custom SoundCloud-style audio player */}
           {(() => {
-            const streamUrl = "/Free_Test_Data_500KB_MP3.mp3";
-            const trackTitle = "Test Audio";
+            const streamUrl = "/250627_PDB02_AltonaV2.mp3";
+            const trackTitle = "Klopstock-Linde - Tilo Werner";
             const CustomPlayer = withCustomAudio((props) => {
               return (
                 <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
@@ -189,7 +189,6 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
-          */}
         </div>
 
         <div id="glaskirsche" className="py-8">
