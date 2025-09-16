@@ -23,7 +23,7 @@ const locations = [
 
   { name: "5 Platanen (Gerhart-Hauptmann-Platz)", lat: 53.551768, lng: 9.998647, link: "#gerhard-hauptmann-platz" },
 
-  { name: "Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) -> soon", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
+  { name: "Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang)", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
 
   { name: "Kirschbäume (Lohsepark, entrance at Yokohamastraße) -> soon", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
 
