@@ -363,6 +363,31 @@ function App() {
             </ul>
           </div>
 
+          <div className="mt-8">
+            <h3 className="text-white text-2xl font-bold mb-4">Supporters</h3>
+            <ul className="list-disc py-4 px-4 text-gray-300">
+              <li>Universität Hamburg (Green Office)</li>
+              <li>Curious Commuity Labs e.V.</li>
+              <li>WeField e.V.</li>
+              <li>Planten un Blomen</li>
+              <li>altonale</li>
+              <li>Fusion Festival / Kulturkosmos e.V.</li>
+              <li>Behörde für Stadtentwicklung und Wohnen (Verborgene Potenziale Innenstadt)</li>
+              <li>Bezirksamt Hamburg-Mitte Stadtteilkultur</li>
+              <li>LAG Kulturfonds</li>
+              <li>Kulturagent*innen Hamburg (Matthias Anton)</li>
+              <li>STS Eidelstedt (Julie Kuhn)</li>
+              <li>Gute Leude Fabrik (Lars Meier and team)</li>
+              <li>Christianskirche Altona</li>
+              <li>Archiv St. Pauli</li>
+              <li>Stadtteilarchiv Ottensen</li>
+              <li>Baumpflege Thomsen</li>
+              <li>TBN Nord</li>
+              <li>Schöneberndt & Sohn</li>
+              <li>KSK Ingenieure</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
