@@ -329,9 +329,40 @@ function App() {
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="team">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
           <h2 className="text-white text-4xl font-bold text-center">Team</h2>
-          <p className="text-gray-300 mt-6">
-            Coming soon.
-          </p>
+          
+          <div className="mt-8">
+            <h3 className="text-white text-2xl font-bold mb-4">Core Team</h3>
+            <ul className="list-disc py-4 px-4 text-gray-300">
+              <li>Julia Nordholz (Artistic Direction, Production,Text)</li>
+              <li>Matthias Schubert (Sound Design & Technical Support)</li>
+              <li>Hannes Hehemann (Architect)</li>
+              <li>Oliver Ochs (Software & Technical Support)</li>
+              <li>Martin Hupf (Hardware & Technical Support)</li>
+              <li>Heidrun Bock (Project Management Assistant)</li>
+              <li>Argo Paalmann (Project Management Assistant)</li>
+              <li>Fiona Grassl (Text Assistant Klopstock-Linde & Fusion Eiche)</li>
+              <li>Charlotte Höflich (Workshop Support)</li>
+              <li>Martin Muth (Workshop Support)</li>
+            </ul>
+          </div>
+
+          <div className="mt-8">
+            <h3 className="text-white text-2xl font-bold mb-4">Narrators & Contributors</h3>
+            <ul className="list-disc py-4 px-4 text-gray-300">
+              <li>Lisa Hagmeister (Lehmann-Platane)</li>
+              <li>Bjarne Mädel (Exeter-Ulme)</li>
+              <li>Lina Beckmann (Götterbaum)</li>
+              <li>Tilo Werner (Klopstock-Linde)</li>
+              <li>Julian Greis (Apfelbäume)</li>
+              <li>Martin Muth (Eiche at Fusion Area in Lärz)</li>
+              <li>Martin Kohlstedt (Sumpfeiche)</li>
+              <li>Hendrik Weber (Exeter-Ulme)</li>
+              <li>Simon Hehemann (Sumpfeiche)</li>
+              <li>Julia Nordholz (Glaskirsche)</li>
+              <li>Students STS Eidelstedt (Platanen at Gerhart-Hauptmann-Platz)</li>
+            </ul>
+          </div>
+
         </div>
       </section>
 
