@@ -1,11 +1,11 @@
 # Security Policy
 
-## ⚠️ Disclaimer: Not Secure for Production
+## ⚠️ Disclaimer: Use at your own risk
 
 This project is intended for development, demonstration, or educational purposes only.
 
 ### Known Security Issues
-- 1 high, 9 moderate, 4 low have already been fixed
+- 1 high, 9 moderate, 4 low have already been fixed.
   
 ### Recommendations
 - **Do not deploy this project to production environments.**
