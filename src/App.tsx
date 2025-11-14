@@ -391,18 +391,6 @@ function App() {
         </div>
       </section>
 
-
-      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="contact">
-        <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Contact</h2>
-          <p className="text-gray-300 mt-6">
-            More information coming soon.<br /><br />
-            Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />
-            <a href="mailto:julia.nordholz@gmail.com" className="text-cyan-400 hover:text-cyan-300 underline">julia.nordholz@gmail.com</a>
-          </p>
-        </div>
-      </section>
-
      <hr></hr>
 
       {/* Bottom Links Section */}
@@ -413,7 +401,7 @@ function App() {
               Funding credits
             </h2>
             <p className="text-gray-300 text-lg">
-              Funded by Verborgene Potenziale Innenstadt, by Behörde für Stadtentwicklung und Wohnen and Stadtteilkultur-Förderung by Bezirksamt-Hamburg-Mitte.
+              Funded by Verborgene Potenziale Innenstadt, by Behörde für Stadtentwicklung und Wohnen and Stadtteilkultur-Förderung by Bezirksamt-Hamburg-Mitte, Freie und Hansestadt Hamburg, Hamburg Kreativgesellschaft. Gefördert durch das Programm "Zukunftsfähige Innenstädte und Zentren" des Bundesministeriums für Wohnen, Stadtentwicklung und Bauwesen.
             </p>
           </div>
           
@@ -435,6 +423,45 @@ function App() {
           </div>
         </div>
       </section>
+
+     
+     <hr />
+
+      {/* Logo Section */}
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <img src="/potentiale.png" alt="Verborgene Potenziale Innenstadt" className="mx-auto mb-4 w-48" />
+          </div>
+          
+          <div>
+            <img src="/innenstaedte.jpeg" alt="Gefördert durch as Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen aufgrund eines Beschlusses des Deutschen Bundestages - zukunftsfähige Innenstädte und Zentren" className="mx-auto mb-4 w-48" />
+          </div>
+          
+          <div>
+            <img src="/kreativgesellschaft.png" alt="Hamburg Kreativgesellschaft" className="mx-auto mb-4 w-48" />
+          </div>
+
+          <div>
+            <img src="/hamburg.png" alt="Freie und Hansestadt Hamburg" className="mx-auto mb-4 w-48" />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      
+      {/* Contact Section */}
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="contact">
+        <div className="prose lg:prose-lg prose-invert max-w-4xl">
+          <h2 className="text-white text-4xl font-bold text-center">Contact</h2>
+          <p className="text-gray-300 mt-6">
+            More information coming soon.<br /><br />
+            Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />
+            <a href="mailto:julia.nordholz@gmail.com" className="text-cyan-400 hover:text-cyan-300 underline">julia.nordholz@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
     </div>
   );
 }
