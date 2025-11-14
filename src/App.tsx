@@ -401,7 +401,7 @@ function App() {
               Funding credits
             </h2>
             <p className="text-gray-300 text-lg">
-              Funded by Verborgene Potenziale Innenstadt, by Behörde für Stadtentwicklung und Wohnen and Stadtteilkultur-Förderung by Bezirksamt-Hamburg-Mitte, Freie und Hansestadt Hamburg, Hamburg Kreativgesellschaft, Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen aufgrund eines Beschlusses des Deutschen Bundestages.
+              Funded by Verborgene Potenziale Innenstadt, by Behörde für Stadtentwicklung und Wohnen and Stadtteilkultur-Förderung by Bezirksamt-Hamburg-Mitte, Freie und Hansestadt Hamburg, Hamburg Kreativgesellschaft. Gefördert durch das Programm "Zukunftsfähige Innenstädte und Zentren" des Bundesministeriums für Wohnen, Stadtentwicklung und Bauwesen.
             </p>
           </div>
           
