@@ -431,19 +431,19 @@ function App() {
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <img src="/potentiale.png" alt="Verborgene Potenziale Innenstadt" className="mx-auto mb-4" />
+            <img src="/potentiale.png" alt="Verborgene Potenziale Innenstadt" className="mx-auto mb-4 w-48" />
           </div>
           
           <div>
-            <img src="/innenstaedte.jpeg" alt="Gefördert durch as Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen aufgrund eines Beschlusses des Deutschen Bundestages - zukunftsfähige Innenstädte und Zentren" className="mx-auto mb-4" />
+            <img src="/innenstaedte.jpeg" alt="Gefördert durch as Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen aufgrund eines Beschlusses des Deutschen Bundestages - zukunftsfähige Innenstädte und Zentren" className="mx-auto mb-4 w-48" />
           </div>
           
           <div>
-            <img src="/kreativgesellschaft.png" alt="Hamburg Kreativgesellschaft" className="mx-auto mb-4" />
+            <img src="/kreativgesellschaft.png" alt="Hamburg Kreativgesellschaft" className="mx-auto mb-4 w-48" />
           </div>
 
           <div>
-            <img src="/hamburg.png" alt="Freie und Hansestadt Hamburg" className="mx-auto mb-4" />
+            <img src="/hamburg.png" alt="Freie und Hansestadt Hamburg" className="mx-auto mb-4 w-48" />
           </div>
         </div>
       </section>
