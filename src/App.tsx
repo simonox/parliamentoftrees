@@ -46,49 +46,6 @@ function App() {
           <Map />
         </section>
       
-       <div id="gerhard-hauptmann-platz" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">5 Platanen (Gerhart-Hauptmann-Platz))</h3>
-         <h4>Conversation of the Five Plane Trees</h4>  
-          <p className="text-gray-300 py-4">
-            Created as part of the art project at the Stadtteilschule Eidelstedt</p>
-          <p className="text-gray-300 py-4">
-            The sound installation at Gerhart-Hauptmann-Platz is the result of a project with students from STS Eidelstedt.<br /><br />
-            Under the artistic direction of Julia Nordholz, and in collaboration with Martin Muth, Matthias Schubert, and Charlotte Höflich, debating, speech, and field recording workshops were held in July 2025.<br /><br />
-            During these sessions, the students developed their own texts from the perspective of the plane trees on the square, recorded them, and thus created a multi-voiced conversation between the trees.
-          </p>
-          <p className="text-gray-300 py-4">
-            <b>Participating students:</b>
-            <ul className="list-disc py-4 px-4">
-              <li>Grade 11: Lennard, Yusra, Devrim, Incilay, Satyam</li>
-              <li>Grade 10: Josephine</li>
-              <li>Grade 7: Ronja, Sina, Anna</li>
-              <li>Grade 6: Amelia, Christiane, Maja, Reyhan</li>
-              <li>Grade 5: Lojayn, Fatoumata, Abuzar, Oliver</li>
-            </ul>
-          </p>
-          <p className="text-gray-300 py-4">
-            In cooperation with the Kulturagent*innen Hamburg (Julie Kuhn and Matthias Anton) and WeField e.V.<br /><br />
-            Special thanks to LAG Kinder- und Jugendkultur e.V. for supporting the project through the Project Fund Culture & School.
-          </p>
-          {/* Custom SoundCloud-style audio player */}
-          {(() => {
-            const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
-            const trackTitle = "Conversation of the Five Plane Trees - Stadtteilschule Eidelstedt";
-            const CustomPlayer = withCustomAudio((props) => {
-              return (
-                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
-                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
-                  <div className="flex-1">
-                    <div className="font-bold text-white text-lg">{trackTitle}</div>
-                    <Timer {...props} className="text-gray-300" />
-                  </div>
-                </div>
-              );
-            });
-            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
-          })()}
-        </div>
-
         <div id="lehmann-platane" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-center">Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Lehmann-Platane"/>*/}
@@ -189,6 +146,50 @@ function App() {
             });
             return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
           })()}
+        </div>
+
+       <div id="gerhard-hauptmann-platz" className="py-8">
+         <h3 className="text-white text-2xl font-bold py-8 text-center">5 Platanen (Gerhart-Hauptmann-Platz)</h3>
+          {/* Custom SoundCloud-style audio player */}
+          {(() => {
+            const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
+            const trackTitle = "Conversation of the Five Plane Trees - Stadtteilschule Eidelstedt";
+            const CustomPlayer = withCustomAudio((props) => {
+              return (
+                <div className="bg-gray-900 rounded-lg p-4 flex gap-4 shadow-lg max-w-xl mt-4">
+                  <PlayButton {...props} className="w-12 h-12 text-cyan-400 hover:text-cyan-300" />
+                  <div className="flex-1">
+                    <div className="font-bold text-white text-lg">{trackTitle}</div>
+                    <Timer {...props} className="text-gray-300" />
+                  </div>
+                </div>
+              );
+            });
+            return <CustomPlayer streamUrl={streamUrl} trackTitle={trackTitle} preloadType="auto" />;
+          })()} <br></br> <br>
+          </br>
+         <h4>Conversation of the Five Plane Trees</h4>  
+          <p className="text-gray-300 py-4">
+            Created as part of the art project at the Stadtteilschule Eidelstedt</p>
+          <p className="text-gray-300 py-4">
+            The sound installation at Gerhart-Hauptmann-Platz is the result of a project with students from STS Eidelstedt.<br /><br />
+            Under the artistic direction of Julia Nordholz, and in collaboration with Martin Muth, Matthias Schubert, and Charlotte Höflich, debating, speech, and field recording workshops were held in July 2025.
+            During these sessions, the students developed their own texts from the perspective of the plane trees on the square, recorded them, and thus created a multi-voiced conversation between the trees.
+          </p>
+          <p className="text-gray-300 py-4">
+            <b>Participating students:</b>
+            <ul className="list-disc py-4 px-4">
+              <li>Grade 11: Lennard, Yusra, Devrim, Incilay, Satyam</li>
+              <li>Grade 10: Josephine</li>
+              <li>Grade 7: Ronja, Sina, Anna</li>
+              <li>Grade 6: Amelia, Christiane, Maja, Reyhan</li>
+              <li>Grade 5: Lojayn, Fatoumata, Abuzar, Oliver</li>
+            </ul>
+          </p>
+          <p className="text-gray-300 py-4">
+            In cooperation with the Kulturagent*innen Hamburg (Julie Kuhn and Matthias Anton) and WeField e.V.<br /><br />
+            Special thanks to LAG Kinder- und Jugendkultur e.V. for supporting the project through the Project Fund Culture & School.
+          </p>
         </div>
 
         <div id="fusion" className="py-8">
@@ -316,9 +317,9 @@ function App() {
       </section>
 
 
-      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="network">
+      <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="documentation">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Network</h2>
+          <h2 className="text-white text-4xl font-bold text-center">Documentation</h2>
           <p className="text-gray-300 mt-6">
             Coming soon.
           </p>
