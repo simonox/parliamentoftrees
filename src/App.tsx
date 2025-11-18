@@ -24,7 +24,7 @@ function App() {
 
       {/* Tree Stories Section */}
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 " id="about">
-        <h2 className="text-white text-4xl font-bold text-center">About</h2>
+        <h2 className="text-white text-4xl font-bold text-center small-caps">About</h2>
         <div className="prose lg:prose-lg prose-invert max-w-4xl py-8 px-4">
           <p className="text-gray-300">
             From July to September 2025, Parlament der Bäume transforms the city of Hamburg into a walkable soundscape. Trees in urban space become poetic narrators – their voices can be heard through site-specific sound installations. The project weaves together ecological research, sound art, and participatory formats.
@@ -34,7 +34,7 @@ function App() {
 
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="trees">
-        <h2 className="text-white text-4xl font-bold text-center">Trees</h2>
+        <h2 className="text-white text-4xl font-bold text-center small-caps">Trees</h2>
         
          {/* Map Section */}
         <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -47,7 +47,7 @@ function App() {
         </section>
       
         <div id="lehmann-platane" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Lehmann-Platane"/>*/}
           <p className="text-gray-300 py-4">
             Narrator: Lisa Hagmeister
@@ -72,7 +72,7 @@ function App() {
         </div>
 
         <div id="exeter-ulme" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Exeter-Ulme (Alter Botanischer Garten, Planten un Blomen)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Exeter-Ulme (Alter Botanischer Garten, Planten un Blomen)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Exeter-Ulme"/>*/}
           <p className="text-gray-300 py-4">
             Narrator: Bjarne Mädel
@@ -98,7 +98,7 @@ function App() {
         </div>
 
  <div id="ailanthus" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) </h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang) </h3>
           {/*<img src="https://placehold.co/600x400" alt="Ailanthus"/>*/}
           <p className="text-gray-300 py-4">
             Narrator: Lina Beckmann
@@ -124,7 +124,7 @@ function App() {
 
 
         <div id="kloppstock-linde" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Klopstock-Linde (Christianskirche, Altona)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Klopstock-Linde (Christianskirche, Altona)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Kloppstock-Linde"/>*/}
           <p className="text-gray-300 py-4">
             Narrator: Tilo Werner
@@ -149,7 +149,7 @@ function App() {
         </div>
 
        <div id="gerhard-hauptmann-platz" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">5 Platanen (Gerhart-Hauptmann-Platz)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">5 Platanen (Gerhart-Hauptmann-Platz)</h3>
           {/* Custom SoundCloud-style audio player */}
           {(() => {
             const streamUrl = "/250812_PDB_LAG_Schnitt_mitAtmo.mp3";
@@ -193,7 +193,7 @@ function App() {
         </div>
 
         <div id="fusion" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Eiche auf dem Gelände des Kulturkosmos Lärz / Fusion</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Eiche auf dem Gelände des Kulturkosmos Lärz / Fusion</h3>
           {/*<img src="https://placehold.co/600x400" alt="Fusion"/>*/}
           <p className="text-gray-300 py-4">
             Narrator: Martin Muth
@@ -218,7 +218,7 @@ function App() {
         </div>
 
         <div id="glaskirsche" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Glaskirsche (University of Hamburg)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Glaskirsche (University of Hamburg)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Glaskirsche"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -244,7 +244,7 @@ function App() {
         </div>
 
          <div id="sumpfeiche" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Sumpfeiche (University of Hamburg)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Sumpfeiche (University of Hamburg)</h3>
           {/*<img src="https://placehold.co/600x400" alt="Sumpfeiche"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -270,7 +270,7 @@ function App() {
         </div>
         
         <div id="lohsepark" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Kirschbäume (Lohsepark, entrance at Yokohamastraße)</h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Kirschbäume (Lohsepark, entrance at Yokohamastraße)</h3>
           {/* <img src="https://placehold.co/600x400" alt="Lohsepark"/> */}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -297,7 +297,7 @@ function App() {
 
         
         <div id="marco-polo-terassen" className="py-8">
-         <h3 className="text-white text-2xl font-bold py-8 text-center">Sumpfzypresse (Marco-Polo-Terassen) </h3>
+         <h3 className="text-white text-2xl font-bold py-8 text-left">Sumpfzypresse (Marco-Polo-Terassen) </h3>
           {/*<img src="https://placehold.co/600x400" alt="Marco-Polo-Terassen"/>*/}
           <p className="text-gray-300 py-4">
             Coming soon.
@@ -309,7 +309,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="archive">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Archive</h2>
+          <h2 className="text-white text-4xl font-bold text-center small-caps">Archive</h2>
           <p className="text-gray-300 mt-6">
             Coming soon.
           </p>
@@ -319,7 +319,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="documentation">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Documentation</h2>
+          <h2 className="text-white text-4xl font-bold text-center small-caps">Documentation</h2>
           <p className="text-gray-300 mt-6">
             Coming soon.
           </p>
@@ -329,7 +329,7 @@ function App() {
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="team">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Team</h2>
+          <h2 className="text-white text-4xl font-bold text-center small-caps">Team</h2>
           
           <div className="mt-8">
             <h3 className="text-white text-2xl font-bold mb-4">Core Team</h3>
@@ -454,7 +454,7 @@ function App() {
       {/* Contact Section */}
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="contact">
         <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center">Contact</h2>
+          <h2 className="text-white text-4xl font-bold text-center small-caps">Contact</h2>
           <p className="text-gray-300 mt-6">
             More information coming soon.<br /><br />
             Meanwhile → <a href="https://instagram.com/julianordholz" className="text-cyan-400 hover:text-cyan-300 underline">instagram.com/julianordholz</a><br />

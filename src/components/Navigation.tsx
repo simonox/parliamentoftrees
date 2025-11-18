@@ -32,7 +32,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:bg-gray-800 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-300 hover:bg-gray-800 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors small-caps"
                 >
                   {item.name}
                 </a>
@@ -57,7 +57,7 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:bg-gray-800 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-gray-300 hover:bg-gray-800 hover:text-cyan-400 block px-3 py-2 rounded-md text-base font-medium transition-colors small-caps"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

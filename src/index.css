@@ -22,3 +22,7 @@ html {
 .animate-scroll {
   animation: scroll 25s linear infinite;
 }
+
+.small-caps {
+  font-variant: small-caps;
+}
