@@ -318,11 +318,43 @@ function App() {
 
 
       <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-black" id="documentation">
-        <div className="prose lg:prose-lg prose-invert max-w-4xl">
-          <h2 className="text-white text-4xl font-bold text-center small-caps">Documentation</h2>
-          <p className="text-gray-300 mt-6">
-            Coming soon.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-white text-4xl font-bold text-center small-caps mb-12">Documentation</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="space-y-2">
+              <img 
+                src="/Photos/JuliaNordholz_14_B7058748_rgb_©HansSchlimbach.jpg" 
+                alt="Installation Götterbaum at Kaiser-Wilhelm-Straße" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <p className="text-gray-400 text-sm text-center">
+                Installation Götterbaum at Kaiser-Wilhelm-Straße. Foto credit: Hans Schlimbach
+              </p>
+            </div>
+            
+            <div className="space-y-2">
+              <img 
+                src="/Photos/JuliaNordholz_Space_09_B7058751_rgb_©HansSchlimbach.jpg" 
+                alt="Installation Götterbaum at Kaiser-Wilhelm-Straße" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <p className="text-gray-400 text-sm text-center">
+                Installation Götterbaum at Kaiser-Wilhelm-Straße. Foto credit: Hans Schlimbach
+              </p>
+            </div>
+            
+            <div className="space-y-2">
+              <img 
+                src="/Photos/JuliaNordholz_Space_13_B7058742_rgb_©HansSchlimbach.jpg" 
+                alt="Installation Götterbaum at Kaiser-Wilhelm-Straße" 
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <p className="text-gray-400 text-sm text-center">
+                Installation Götterbaum at Kaiser-Wilhelm-Straße. Foto credit: Hans Schlimbach
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

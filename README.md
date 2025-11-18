@@ -77,7 +77,7 @@ project/
 npm install
 ```
 
-### Start development server
+### Start development server (preview)
 ```sh
 npm run dev
 ```
