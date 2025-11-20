@@ -45,6 +45,18 @@ function App() {
           </div>
           <Map />
         </section>
+
+        {/* Description Text */}
+        <div className="max-w-4xl mx-auto mt-12 px-4 sm:px-6 lg:px-8">
+          <div className="prose lg:prose-lg prose-invert">
+            <p className="text-gray-300 leading-relaxed">
+              'Parlament der Bäume' (Parliament of Trees) is a site-specific sound and text installation across Hamburg's inner city. Discreet solar-powered listening units render selected urban trees as audible speakers: poetic monologues (texts by Julia Nordholz) voice each tree's story, stance, and appeal, while sensor data informs the sonic textures. Passers-by are invited to slow down, listen, and build a relationship with the city's trees. The monologues and dialogues give selected urban trees a voice, weaving site-specific memories with current ecological experiences. They address layers of landscape history and social use around their environments, climate and drought stress, soil compaction, and practices of care in the urban realm. Species-specific traits—such as those of the Lehmann plane and the Exeter elm—become audible alongside questions of the rights of nature and more-than-human publics. In doing so, the trees share their worries, experiences, encounters, visions, and wishes.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-4">
+              The sound design blends field recordings with sonified climate/environmental data, resulting in a poetic yet well-grounded speaking position that invites listeners to pause and attend. The texts and spatial choices draw on combined research sources: historical landscape plans and planting lists related to the places; materials and conversations within the context of the places; municipal tree and site information as well as technical documents on urban ecology; library and press archives (reports, historical photographs, city maps); multi-year climate and weather data as a basis for the sonification; supplemented by on-site conversations with caretakers, residents, and passers-by.
+            </p>
+          </div>
+        </div>
       
         <div id="lehmann-platane" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-left">Lehmann-Platane (Alter Botanischer Garten, Planten un Blomen)</h3>
