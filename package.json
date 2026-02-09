@@ -19,7 +19,7 @@
     "react-soundplayer": "^1.0.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
+    "@eslint/js": "^10.0.1",
     "@types/leaflet": "^1.9.20",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
