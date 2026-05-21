@@ -25,7 +25,7 @@ const locations = [
 
   { name: "Götterbaum (Kaiser-Wilhelm-Straße, Kreuzung Kronträgergang)", lat: 53.552822, lng: 9.983845, link: "#ailanthus" },
 
-  { name: "Kirschbäume (Lohsepark, entrance at Yokohamastraße) -> soon", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
+  { name: "Kirschbäume (Lohsepark, entrance at Yokohamastraße)", lat: 53.5451, lng: 10.0024, link: "#lohsepark" },
 
   { name: "Sumpfzypresse (Marco-Polo-Terassen) -> soon", lat: 53.5433, lng: 9.9917, link: "#marco-polo-terassen" },
 ];
