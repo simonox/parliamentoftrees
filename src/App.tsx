@@ -401,7 +401,7 @@ function App() {
               <li>Martin Kohlstedt (Sumpfeiche)</li>
               <li>Hendrik Weber (Exeter-Ulme)</li>
               <li>Simon Hehemann (Sumpfeiche)</li>
-              <li>Julian Greis (Kirschbäume)</li>
+              <li>Julian Greis (Süßkirschen im Lohespark)</li>
               <li>Julia Nordholz (Glaskirsche)</li>
               <li>Students STS Eidelstedt (Platanen at Gerhart-Hauptmann-Platz)</li>
             </ul>
