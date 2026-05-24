@@ -284,11 +284,9 @@ function App() {
         <div id="lohsepark" className="py-8">
          <h3 className="text-white text-2xl font-bold py-8 text-left">Kirschbäume (Lohsepark, entrance at Yokohamastraße)</h3>
           {/* <img src="https://placehold.co/600x400" alt="Lohsepark"/> */}
-          {
           <p className="text-gray-300 py-4">
             Narrator: Julian Greis
           </p>
-          
           {(() => {
             const streamUrl = "/Suesskirschen.mp3";
             const trackTitle = "Süßkirschen im Lohespark ";
