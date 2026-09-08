@@ -16,8 +16,7 @@
     "react-dom": "^19.2.6",
     "react": "^19.2.4",
     "react-leaflet": "^5.0.0",
-    "react-soundplayer": "^1.0.5",
-    "vercel": "^59.11.7"
+    "react-soundplayer": "^1.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
