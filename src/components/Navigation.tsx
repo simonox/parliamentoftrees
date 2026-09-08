@@ -21,7 +21,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-cyan-400 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-cyan-400 focus:outline-hidden transition-colors"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
